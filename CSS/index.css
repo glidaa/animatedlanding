@@ -56,17 +56,13 @@ body {
       font-size: 1.5rem;
       text-align: left;
       color: #fff;
-      background-color:#2C373F;
+      background-color: #333;
+      border-radius: 20px;
       font-weight: 900;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 70px;
-      border-bottom-right-radius: 100px;
       padding: .8em 1em;
-      border-bottom-left-radius: 50px;
       line-height: 3.5rem; }
       #studies #text-content-studying-2{
         margin: 10em 0;
-        background-color:#2C373F
       }
       
 /*Third Section*/
@@ -79,13 +75,10 @@ body {
       font-size: 1.5rem;
       text-align: left;
       color: #fff;;
-      border-top-right-radius: 70px;
-      border-top-left-radius: 10px;
-      border-bottom-right-radius: 50px;
-      border-bottom-left-radius: 100px;
+      border-radius: 20px;
       padding: .8em 1em;
       font-weight: 900;
-      background-color: #7695AD;
+      background-color: #333;
       line-height: 3.5rem; }
 
 /*Fourth Section - CoWorkers*/
@@ -98,11 +91,8 @@ body {
       font-size: 1.5rem;
       text-align: left;
       color: #fff;
-      background-color: #FA7269;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 70px;
-      border-bottom-right-radius: 100px;
-      border-bottom-left-radius: 50px;
+      background-color: #333;
+      border-radius: 20px;
       padding: .8em 1em;
       font-weight: 900;
       line-height: 3.5rem; }
@@ -117,11 +107,8 @@ body {
       font-size: 1.5rem;
       text-align: left;
       color: #fff;
-      background-color: #A6BED2;
-      border-top-right-radius: 70px;
-      border-top-left-radius: 10px;
-      border-bottom-right-radius: 50px;
-      border-bottom-left-radius: 100px;
+      background-color: #333;
+      border-radius: 20px;
       padding: .8em 1em;
       font-weight: 900;
       line-height: 3.5rem; }
