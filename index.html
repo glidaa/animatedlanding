@@ -32,13 +32,9 @@
          </div>-->
     </div>
 </main>
-<section>
-    <div class="container">
-        <div class="text-div">
-           <span>
-                " cutting through means reaching out over email, and presenting at a self pace."
-           </span>
-        </div>
+<section  id="sec02">
+    <div class="fromLeft">
+        <h2>cutting through means reaching out over email, and presenting at a self pace.</h2>
     </div>
 </section>
 <script type="text/javascript" src="./assets/js/vendors.js"></script>
@@ -61,19 +57,22 @@
 
         }
     });*/
+    gsap.set('.fromLeft', {yPercent:-50})
+    let tl = gsap.timeline({
 
-    gsap.to('.text-div', {
         scrollTrigger: {
-            trigger: '.text-div',
-            start: "top bottom-=150px",
-            end: "top top",
-            scrub: true,
+            trigger: "#sec02",
+            pin:true,
+            start: "center center",
+            end: "+=150%",
+            scrub: 1,
             markers: true,
         },
-        width:'100%',
-        height:'100%',
-        ease: 'none',
-    })
+        defaults:{duration:1, ease:'none'}
+    });
+    tl.from('.fromLeft',{ x:-400})
+    tl.to('.fromLeft',{width:'100%', height: '100%'}, '+=1')
+    tl.to({},{duration:1})// an empty tween = a little pause ...
 </script>
 </body>
 </html>
