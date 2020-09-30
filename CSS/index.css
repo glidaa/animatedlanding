@@ -8,7 +8,7 @@ a {
   text-decoration: none; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;}
 
 /*Header-First Section*/
 #header {
@@ -50,58 +50,79 @@ body {
 
 /*Second Section*/
 #studies {
-  height: 100vh;
-  background-color: #333;
+  height: 100%;
   padding: 200px 0; }
-  #studies .container .centered-header {
-    align-self: center; }
     #studies .container .centered-header .header {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: left;
       color: #fff;
+      background-color:#2C373F;
       font-weight: 900;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 70px;
+      border-bottom-right-radius: 100px;
+      padding: .8em 1em;
+      border-bottom-left-radius: 50px;
       line-height: 3.5rem; }
-
+      #studies #text-content-studying-2{
+        margin: 10em 0;
+        background-color:#2C373F
+      }
+      
 /*Third Section*/
 #girl {
   height: 100vh;
-  background-color: white;
   padding: 300px 0; }
   #girl .container .centered-header {
-    width: 50%;
     align-self: center; }
     #girl .container .centered-header .header {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: left;
-      color: #333;
+      color: #fff;;
+      border-top-right-radius: 70px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 100px;
+      padding: .8em 1em;
       font-weight: 900;
+      background-color: #7695AD;
       line-height: 3.5rem; }
 
 /*Fourth Section - CoWorkers*/
 #co-workers {
   height: 100vh;
-  background-color: #C6C0DD;
   padding: 300px 0; }
   #co-workers .container .centered-header {
     align-self: center; }
     #co-workers .container .centered-header .header {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: left;
       color: #fff;
+      background-color: #FA7269;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 70px;
+      border-bottom-right-radius: 100px;
+      border-bottom-left-radius: 50px;
+      padding: .8em 1em;
       font-weight: 900;
       line-height: 3.5rem; }
 
 /*Last Section*/
 #workout {
   height: 100vh;
-  background-color: #2C373F;
   padding: 300px 0; }
   #workout .container .centered-header {
     align-self: center; }
     #workout .container .centered-header .header {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: left;
       color: #fff;
+      background-color: #A6BED2;
+      border-top-right-radius: 70px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 100px;
+      padding: .8em 1em;
       font-weight: 900;
       line-height: 3.5rem; }
 
@@ -118,22 +139,38 @@ body {
   #header .centered-header .container {
     padding: 20px; }
     #header .centered-header .container h1 {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+      #co-workers .container .centered-header .header, #workout .container .centered-header .header, #girl .container .centered-header .header, #studies .container .centered-header .header {
+        font-size: 1rem;
+        position: absolute;
+        z-index: 1;
+        font-weight: 900;
+        line-height: 2rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: .8em 1em; } }}
 @media screen and (max-width: 414px) {
   #co-workers, #workout, #girl, #studies {
     padding: 40px 0 200px 0;
     height: auto; }
     #co-workers .container .centered-header .header, #workout .container .centered-header .header, #girl .container .centered-header .header, #studies .container .centered-header .header {
       font-size: 1rem;
+      position: absolute;
+      z-index: 1;
       font-weight: 900;
-      line-height: 2rem; } }
+      line-height: 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: .8em 1em; } }
 @media screen and (max-width: 375px) {
   #co-workers, #workout, #girl, #studies {
     padding: 300px 0;
     height: 100%; }
     #co-workers .container .centered-header .header, #workout .container .centered-header .header, #girl .container .centered-header .header, #studies .container .centered-header .header {
       font-size: 1rem;
+      position: absolute;
+      z-index: 1;
       font-weight: 900;
-      line-height: 2rem; } }
+      line-height: 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: .8em 1em; } }
 
 /*# sourceMappingURL=index.css.map */
