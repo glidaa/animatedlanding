@@ -137,3 +137,14 @@ body {
       line-height: 2rem; } }
 
 /*# sourceMappingURL=index.css.map */
+
+.text {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+      font-weight: 900;
+      line-height: 2rem;
+      color: white;
+  border-radius: 25px;
+  background: rgb(89, 89, 89, .3);
+}  
