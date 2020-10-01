@@ -58,7 +58,7 @@
 
         }
     });*/
-    gsap.set('.fromLeft', {yPercent:-50})
+   /* gsap.set('.fromLeft', {yPercent:-50})
     let tl = gsap.timeline({
 
         scrollTrigger: {
@@ -74,6 +74,13 @@
     tl.from('.fromLeft',{ x:-400})
     tl.to('.fromLeft',{width:'100%', height: '100%'}, '+=1')
     tl.to({},{duration:1})// an empty tween = a little pause ...
+*/
+    ScrollLottie({
+    target: '#sec02',
+    path: 'https://assets3.lottiefiles.com/private_files/lf30_P9kQz3.json', 
+    duration: 4, 
+    speed: 'medium'
+    })
 </script>
 </body>
 </html>
