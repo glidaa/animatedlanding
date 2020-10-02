@@ -15,11 +15,11 @@
 </head>
 <body>
 <div class="overlay"></div>
-<main>
+<div class="main">
     <div class="frame">
         <div class="frame__title-wrap">
             <h1 class="frame__title">
-               
+
             </h1>
         </div>
         <!-- <div class="frame__links">
@@ -29,26 +29,26 @@
              <a href="#">Section 4</a>
          </div>-->
     </div>
-</main>
+</div>
 <section class="animationbg" id="sec02">
     <div class="text">
-        <h2>cutting through means reaching out over email, and presenting at a self pace.</h2>
+        cutting through means reaching out over email, and presenting at a self pace.
     </div>
 </section>
 <section class="animationbg" id="sec03">
     <div class="text">
-        <h2>you want to be alerted when they are on so they can go through the page, while you talk on
-            the phone..</h2>
+        you want to be alerted when they are on so they can go through the page, while you talk on
+        the phone..
     </div>
 </section>
 <section class="animationbg" id="sec04">
     <div class="text">
-        <h2>Know when your prospect is looking.</h2>
+        Know when your prospect is looking.
     </div>
 </section>
 <section class="animationbg" id="sec05">
     <div class="text">
-        <h2>zoom is dead, it is time to create a quick modern experience".</h2>
+        zoom is dead, it is time to create a quick modern experience".
     </div>
 </section>
 <script type="text/javascript" src="./assets/js/vendors.js"></script>
@@ -60,58 +60,66 @@
 <script src="./assets/js/ScrollLottie.js"></script>
 
 <script>
-    gsap.registerPlugin(ScrollTrigger);
-    /*let tl = gsap.timeline({
-        // yes, we can add it to an entire timeline!
-        scrollTrigger: {
-            trigger: ".container",
-            start: "top top+=200px",
-            end: "top top+=500px",// when the top of the trigger hits the top of the viewport
-            scrub: 1,
-            markers: true,
 
-        }
+    ScrollLottie({
+        target: '#sec02',
+        path: 'https://assets3.lottiefiles.com/private_files/lf30_P9kQz3.json',
+        duration: 4,
+        speed: 'medium'
+    })
+    ScrollLottie({
+        target: '#sec03',
+        path: 'https://assets4.lottiefiles.com/packages/lf20_IaX52r.json',
+        duration: 4,
+        speed: 'medium'
+    })
+    ScrollLottie({
+        target: '#sec04',
+        path: 'https://assets2.lottiefiles.com/packages/lf20_QdVQmS.json',
+        duration: 4,
+        speed: 'medium'
+    })
+    ScrollLottie({
+        target: '#sec05',
+        path: 'https://assets4.lottiefiles.com/private_files/lf30_lKuCPz.json',
+        duration: 4,
+        speed: 'medium'
+    })
+
+    /*const boxes = gsap.utils.toArray('section');
+
+    boxes.forEach((box, i) => {
+        const anim = gsap.fromTo(box, {autoAlpha: 0}, {duration: 1, autoAlpha: 1, y: 0});
+        ScrollTrigger.create({
+            trigger: box,
+            animation: anim,
+            toggleActions: 'play none none none',
+            scrub:1,
+
+        });
     });*/
-   /* gsap.set('.fromLeft', {yPercent:-50})
-    let tl = gsap.timeline({
 
-        scrollTrigger: {
-            trigger: "#sec02",
-            pin:true,
-            start: "center center",
-            end: "+=150%",
-            scrub: 1,
-            markers: true,
-        },
-        defaults:{duration:1, ease:'none'}
-    });
-    tl.from('.fromLeft',{ x:-400})
-    tl.to('.fromLeft',{width:'100%', height: '100%'}, '+=1')
-    tl.to({},{duration:1})// an empty tween = a little pause ...
-*/
-    ScrollLottie({
-    target: '#sec02',
-    path: 'https://assets3.lottiefiles.com/private_files/lf30_P9kQz3.json', 
-    duration: 4, 
-    speed: 'medium'
-    })
-    ScrollLottie({
-    target: '#sec03',
-    path: 'https://assets4.lottiefiles.com/packages/lf20_IaX52r.json', 
-    duration: 4, 
-    speed: 'medium'
-    })
-    ScrollLottie({
-    target: '#sec04',
-    path: 'https://assets2.lottiefiles.com/packages/lf20_QdVQmS.json', 
-    duration: 4, 
-    speed: 'medium'
-    })
-    ScrollLottie({
-    target: '#sec05',
-    path: 'https://assets4.lottiefiles.com/private_files/lf30_lKuCPz.json', 
-    duration: 4, 
-    speed: 'medium'
+    console.log('be')
+    var sections = gsap.utils.toArray("section").forEach(function(elem) {
+
+        var text = elem.querySelectorAll(".text");
+
+
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: elem,
+                pin:true,
+                scrub:0.3,
+                start: "top top",
+                end: "+=1000",
+            },
+        })
+            .to(text, {
+                y:() => -window.innerHeight - 100,
+                duration:3,
+                stagger:3, ease:'none'
+            })
+
     })
 </script>
 </body>
