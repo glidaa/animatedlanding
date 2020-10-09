@@ -131,13 +131,14 @@
 
             return m(e, a["a"]), e
         }()) || r) || r);
-        g.camera.position.z = 6;
-        var P = new u.a("Sales pages that convertlors", {
+        g.camera.position.z = 20;
+        var P = new u.a("Send remote interactive presentations", {
             color: "#ffffff",
-            size: (y.a.isMobile, .2),
+            size: (y.a.isMobile, .5),
             wireframe: !1,
             opacity: 1
         });
+
         P.position.x = -P.basePosition * (y.a.isMobile ? .5 : .55), P.position.y = y.a.isMobile ? -1.2 : -.9, P.position.z = 2, P.rotation.x = -.1;
         var _ = ["#dc202e", "#f7ed99", "#2d338b", "#76306b", "#ea8c2d"].map(function (t) {
             return new i.Color(t)
