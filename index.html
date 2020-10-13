@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GLIDAA</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+	
+    <script>document.documentElement.className = "js";
+    var supportsCssVars = function () {
+        var e, t = document.createElement("style");
+        return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+    <link href="css/vendors.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script>
+        document.documentElement.className = 'js';
+        var supportsCssVars = function() {
+            var e,
+                t = document.createElement('style');
+            return (
+                (t.innerHTML = 'root: { --tmp-var: bold; }'),
+                document.head.appendChild(t),
+                (e = !!(
+                    window.CSS &&
+                    window.CSS.supports &&
+                    window.CSS.supports('font-weight', 'var(--tmp-var)')
+                )),
+                t.parentNode.removeChild(t),
+                e
+            );
+        };
+        supportsCssVars() ||
+            alert('Please view this demo in a modern browser that supports CSS Variables.');
+    </script>
+</head>
+<body>
+
+    <div class="overlay"></div>
+    <main>
+        <div class="frame">
+            <div class="frame__title-wrap">
+                <h1 class="frame__title">
+                   
+                </h1>
+            </div>
+            <!-- <div class="frame__links">
+                 <a href="#">Section 1</a>
+                 <a href="#">Section 2</a>
+                 <a href="#">Section 3</a>
+                 <a href="#">Section 4</a>
+             </div>-->
+        </div>
+    </main>
+<section>
+    <div class="content content--canvas">
+        <div class="header">
+            <h1 class="header__title">Phenomenon</h1>
+            <p class="header__text">WebGL based transitions on scroll</p>
+           
+        </div>
+        <div class="heading">
+            A tiny wrapper around three.js built for high-performance WebGL experiences.
+            <section class="animationbg" id="sec02">
+                <div class="text">
+                    <h2>cutting through means reaching out over email, and presenting at a self pace.</h2>
+                </div>
+            </section>
+            
+        </div>
+        <div class="heading">
+            GPU based for smooth transitions like scale, rotation and movement.
+            <section class="animationbg" id="sec03">
+                <div class="text">
+                    <h2>you want to be alerted when they are on so they can go through the page, while you talk on
+                        the phone..</h2>
+                </div>
+            </section>
+            
+            </div>
+        <div class="heading">Modify default geometry and material for infinite possibilities.<section class="animationbg" id="sec04">
+            <div class="text">
+                <h2>Know when your prospect is looking.</h2>
+            </div>
+        </section>
+       </div>
+        <div class="heading">That's it, thank you for scrolling! :) <section class="animationbg" id="sec05">
+            <div class="text">
+                <h2>zoom is dead, it is time to create a quick modern experience".</h2>
+            </div>
+        </section></div>
+    </div>
+ 
+<script type="text/javascript" src="js/vendors.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="js/lottie.js"></script>
+<script src="js/ScrollLottie.js"></script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    /*let tl = gsap.timeline({
+        // yes, we can add it to an entire timeline!
+        scrollTrigger: {
+            trigger: ".container",
+            start: "top top+=200px",
+            end: "top top+=500px",// when the top of the trigger hits the top of the viewport
+            scrub: 1,
+            markers: true,
+
+        }
+    });*/
+   /* gsap.set('.fromLeft', {yPercent:-50})
+    let tl = gsap.timeline({
+
+        scrollTrigger: {
+            trigger: "#sec02",
+            pin:true,
+            start: "center center",
+            end: "+=150%",
+            scrub: 1,
+            markers: true,
+        },
+        defaults:{duration:1, ease:'none'}
+    });
+    tl.from('.fromLeft',{ x:-400})
+    tl.to('.fromLeft',{width:'100%', height: '100%'}, '+=1')
+    tl.to({},{duration:1})// an empty tween = a little pause ...
+*/
+    ScrollLottie({
+    target: '#sec02',
+    path: 'https://assets3.lottiefiles.com/private_files/lf30_P9kQz3.json', 
+    duration: 4, 
+    speed: 'medium'
+    })
+    ScrollLottie({
+    target: '#sec03',
+    path: 'https://assets4.lottiefiles.com/packages/lf20_IaX52r.json', 
+    duration: 4, 
+    speed: 'medium'
+    })
+    ScrollLottie({
+    target: '#sec04',
+    path: 'https://assets2.lottiefiles.com/packages/lf20_QdVQmS.json', 
+    duration: 4, 
+    speed: 'medium'
+    })
+    ScrollLottie({
+    target: '#sec05',
+    path: 'https://assets4.lottiefiles.com/private_files/lf30_lKuCPz.json', 
+    duration: 4, 
+    speed: 'medium'
+    })
+</script>
+<script src="https://unpkg.com/three@0.102.1/build/three.min.js"></script>
+		<script src="https://unpkg.com/three.phenomenon@1.1.0/dist/three.phenomenon.umd.js"></script>
+		<script src="https://unpkg.com/uos@1.1.1/dist/uos.umd.js"></script>
+        <script src="JS/bundle.umd.js"></script>
+        <script type="text/javascript" src="js/index2.js"></script>
+</body>
+</html>
