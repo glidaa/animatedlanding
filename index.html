@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GLIDAA</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
-	
+    <title>glidaa.com.</title>
     <script>document.documentElement.className = "js";
     var supportsCssVars = function () {
         var e, t = document.createElement("style");
@@ -14,84 +12,71 @@
     supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
     <link href="css/vendors.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <script>
-        document.documentElement.className = 'js';
-        var supportsCssVars = function() {
-            var e,
-                t = document.createElement('style');
-            return (
-                (t.innerHTML = 'root: { --tmp-var: bold; }'),
-                document.head.appendChild(t),
-                (e = !!(
-                    window.CSS &&
-                    window.CSS.supports &&
-                    window.CSS.supports('font-weight', 'var(--tmp-var)')
-                )),
-                t.parentNode.removeChild(t),
-                e
-            );
-        };
-        supportsCssVars() ||
-            alert('Please view this demo in a modern browser that supports CSS Variables.');
-    </script>
 </head>
 <body>
-
-    <div class="overlay"></div>
-    <main>
-        <div class="frame">
-            <div class="frame__title-wrap">
-                <h1 class="frame__title">
-                   
-                </h1>
-            </div>
-            <!-- <div class="frame__links">
-                 <a href="#">Section 1</a>
-                 <a href="#">Section 2</a>
-                 <a href="#">Section 3</a>
-                 <a href="#">Section 4</a>
-             </div>-->
+<div class="overlay"></div>
+<main>
+    <div class="frame">
+        <div class="frame__title-wrap">
+            <h1 class="frame__title">
+               
+            </h1>
         </div>
-    </main>
-<section>
-    <div class="content content--canvas">
-        <div class="header">
-            <h1 class="header__title">Phenomenon</h1>
-            <p class="header__text">WebGL based transitions on scroll</p>
-           
-        </div>
-        <div class="heading">
-            A tiny wrapper around three.js built for high-performance WebGL experiences.
-            <section class="animationbg" id="sec02">
-                <div class="text">
-                    <h2>cutting through means reaching out over email, and presenting at a self pace.</h2>
-                </div>
-            </section>
-            
-        </div>
-        <div class="heading">
-            GPU based for smooth transitions like scale, rotation and movement.
-            <section class="animationbg" id="sec03">
-                <div class="text">
-                    <h2>you want to be alerted when they are on so they can go through the page, while you talk on
-                        the phone..</h2>
-                </div>
-            </section>
-            
-            </div>
-        <div class="heading">Modify default geometry and material for infinite possibilities.<section class="animationbg" id="sec04">
-            <div class="text">
-                <h2>Know when your prospect is looking.</h2>
-            </div>
-        </section>
-       </div>
-        <div class="heading">That's it, thank you for scrolling! :) <section class="animationbg" id="sec05">
-            <div class="text">
-                <h2>zoom is dead, it is time to create a quick modern experience".</h2>
-            </div>
-        </section></div>
+        <!-- <div class="frame__links">
+             <a href="#">Section 1</a>
+             <a href="#">Section 2</a>
+             <a href="#">Section 3</a>
+             <a href="#">Section 4</a>
+         </div>-->
     </div>
- 
+</main>
+<section class="animationbg" id="sec02">
+  
+</section>
+<section class="video" id="vid01">
+    <div class="text2">
+        <h2>Video will crush it</h2>
+    </div>
+</section>
+<section class="animationbg" id="sec03">
+    <div class="text">
+        <h2>you want to be alerted when they are on so they can go through the page, while you talk on
+            the phone..</h2>
+    </div>
+</section>
+<section class="video" id="vid02">
+    <div class="text2">
+        <h2>Video will crush it</h2>
+    </div>
+</section>
+<section class="animationbg" id="sec04">
+    <div class="text">
+        <h2>Know when your prospect is looking.</h2>
+    </div>
+</section>
+<section class="video" id="vid03">
+    <div class="text2">
+        <h2>2</h2>
+    </div>
+</section>
+<section class="animationbg" id="sec05">
+    <div class="text">
+        <h2>zoom is dead, it is time to create a quick modern experience".</h2>
+    </div>
+</section>
+<section class="video" id="vid04">
+    <video autoplay muted loop id="myVideo">
+        <source src="GIPHYS/rain.mp4" type="video/mp4">
+      </video>
+    <div class="text2">
+        <h2>3</h2>
+    </div>
+</section>
+<section class="animationbg" id="sec06">
+    <div class="text">
+        <h2>zoom is dead, it is time to create a quick modern experience".</h2>
+    </div>
+</section>
 <script type="text/javascript" src="js/vendors.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -132,8 +117,8 @@
     ScrollLottie({
     target: '#sec02',
     path: 'https://assets3.lottiefiles.com/private_files/lf30_P9kQz3.json', 
-    duration: 4, 
-    speed: 'medium'
+    duration: 8, 
+    speed: 'slow'
     })
     ScrollLottie({
     target: '#sec03',
@@ -154,10 +139,5 @@
     speed: 'medium'
     })
 </script>
-<script src="https://unpkg.com/three@0.102.1/build/three.min.js"></script>
-		<script src="https://unpkg.com/three.phenomenon@1.1.0/dist/three.phenomenon.umd.js"></script>
-		<script src="https://unpkg.com/uos@1.1.1/dist/uos.umd.js"></script>
-        <script src="JS/bundle.umd.js"></script>
-        <script type="text/javascript" src="js/index2.js"></script>
 </body>
 </html>

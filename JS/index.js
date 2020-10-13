@@ -131,8 +131,8 @@
 
             return m(e, a["a"]), e
         }()) || r) || r);
-        g.camera.position.z = 6;
-        var P = new u.a("Sales pages that convertlors", {
+        g.camera.position.z = 12;
+        var P = new u.a("Send remote interactive presentations.", {
             color: "#ffffff",
             size: (y.a.isMobile, .2),
             wireframe: !1,
