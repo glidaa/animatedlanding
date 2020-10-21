@@ -131,15 +131,15 @@
 
             return m(e, a["a"]), e
         }()) || r) || r);
-        g.camera.position.z = 12;
-        var P = new u.a("Send remote interactive presentations.", {
+        g.camera.position.z = 5;
+        var P = new u.a("Bespoke Sales Applications", {
             color: "#ffffff",
             size: (y.a.isMobile, .2),
             wireframe: !1,
             opacity: 1
         });
         P.position.x = -P.basePosition * (y.a.isMobile ? .5 : .55), P.position.y = y.a.isMobile ? -1.2 : -.9, P.position.z = 2, P.rotation.x = -.1;
-        var _ = ["#dc202e", "#f7ed99", "#2d338b", "#76306b", "#ea8c2d"].map(function (t) {
+        var _ = ["#iii", "#hhh", "#ggg", "#eee", "#ddd"].map(function (t) {
             return new i.Color(t)
         }), x = {x: 0, y: 0, z: 0}, M = new (function (t) {
             function e() {

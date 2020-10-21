@@ -21,6 +21,7 @@ section{
     height:100vh;
     background:white;
     z-index: -3;
+    translate(0px, -5731.933px);
 }
 
 .video {
